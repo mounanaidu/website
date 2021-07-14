@@ -11,11 +11,13 @@ pipeline{
                 stage('build reporting function'){
                     steps{
                         echo "This is building reporting module"
+                        sleep 5
                     }
                 }
                 stage('build check-in functions'){
                     steps{
                         echo "This is building reporting module"
+                        sleep 5
                     }
                 }
             }
@@ -33,6 +35,7 @@ pipeline{
                     gv.buildApp()
                 }
                 echo "This is the build step in jenkinsfile"
+                sleep 5
             }
         }
 
@@ -44,6 +47,7 @@ pipeline{
             // }
             steps {
                 echo "This is the test step in version"
+                sleep 5
                 // echo "This is the test step in version ${NEW_VERSION}"
             }
         }
