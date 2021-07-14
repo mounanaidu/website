@@ -32,7 +32,7 @@ pipeline{
                 script{
                     gv.buildApp()
                 }
-                echo "This is the build step"
+                echo "This is the build step in jenkinsfile"
             }
         }
 
@@ -43,7 +43,8 @@ pipeline{
             //     }
             // }
             steps {
-                echo "This is the test step in version ${NEW_VERSION}"
+                echo "This is the test step in version"
+                // echo "This is the test step in version ${NEW_VERSION}"
             }
         }
 
